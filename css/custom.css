@@ -1,0 +1,77 @@
+.col-home{
+	background: transparent;
+	margin-top: 13%;
+}
+.col-log{
+	background: rgba(255,255,255,0.7);
+	margin-top: 8%;
+	border-radius: 5px;
+}
+.col-reg{
+	background: rgba(255,255,255,0.7);
+	margin-top: 1%;
+}
+.col-about{
+	background: rgba(255,255,255,0.9);
+}
+.title-about{
+	background: red;
+	color:white;
+}
+.c-body{
+	padding-top: 70px;
+}
+
+@-webkit-keyframes changecolor {
+
+From { background: transparent; color:blue; }
+To { background: red; color:white; }
+
+}
+
+.nav-link:hover{
+
+/* Style dasar elemen */
+
+/* Nama Animasi */
+animation-name: changecolor;
+
+/* Setting Animasi */
+animation-duration: 1s;
+animation-fill-mode: forwards;
+}
+
+.msg-box-1{
+	letter-spacing: normal;
+  line-break: auto;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  white-space: normal;
+}
+.c-user-list{
+	
+	text-decoration: none;
+}
+.c-user-list:hover{
+	background: rgb(210,210,210);
+}
+.a-c-user-list:hover{
+	text-decoration: none;
+}
+@-webkit-keyframes changenu{
+	from{ color: red; }
+	to { color:#1E90FF; }
+}
+.c-a-nu{
+	color: red;
+}
+.c-a-nu:hover{
+	text-decoration: none;
+	animation-name: changenu;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}

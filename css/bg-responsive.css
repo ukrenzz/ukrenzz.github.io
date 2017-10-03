@@ -1,0 +1,100 @@
+body{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body{
+		background: gray;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 560px){
+	body{
+		background-image: url('../img/bg-667-l.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (min-width : 320px) and (max-width: 415px) {
+	body{
+		background-image: url('../img/bg-667-p.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top center;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	body{
+		background-image: url('../img/bg-1024-p.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	body{
+		background-image: url('../img/bg-1024-l.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Style CSS di Sini */
+	body{
+		background-image: url('../img/bg-1024-p.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1024px) {
+	body{
+		background-image: url('../img/bg-1024-l.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1270px) {
+	body{
+		background-image: url('../img/bg-1360.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+	body{
+		background-image: url('../img/bg-1920.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: top;
+	}
+}
+
+/* iPhone 4 and high pixel ratio devices ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Style CSS di Sini */
+}
