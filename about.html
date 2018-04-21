@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Richy-Tech</title>
+	<link rel="icon" href="logo.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="js/jquery.3.3.1.min.js"></script>
+	<script>
+		window.onscroll = scrolling
+	      function scrolling(){
+	        var nilai = window.pageYOffset
+	        if(nilai > 630){
+	          var element = document.getElementById('navbar');
+	          element.classList.remove("nav-home");
+	          element.classList.add("nav-animation");
+	        } else {
+	          var element = document.getElementById('navbar');
+	          element.classList.add("nav-home");
+	          element.classList.remove("nav-animation");
+	        }
+
+	        var nback = document.getElementById("btn_back");
+	        if(nilai > 150){
+	          nback.style.display = "block";
+	        } else {
+	          nback.style.display = "none";
+	        }
+	      }	
+		$(document).ready(function(){
+	        // Add smooth scrolling to all links
+	        $("a[id='slink']").on('click', function(event) {
+
+	          // Make sure this.hash has a value before overriding default behavior
+	          if (this.hash !== "") {
+	            // Prevent default anchor click behavior
+	            event.preventDefault();
+
+	            // Store hash
+	            var hash = this.hash;
+
+	            // Using jQuery's animate() method to add smooth page scroll
+	            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	            $('html, body').animate({
+	              scrollTop: $(hash).offset().top
+	            }, 800, function(){
+	         
+	              // Add hash (#) to URL when done scrolling (default click behavior)
+	              window.location.hash = hash;
+	            });
+	          } // End if
+	        });
+	      });
+
+		$(document).ready(function(){
+		    $("#btn_music").click(function(){
+		        $("#music_box").fadeToggle("slow");
+		    });
+		});
+
+	</script>
+	
+</head>
+<body class="">
+	<nav id="navbar" class="nav-home">
+		<a href="index.html"><span  class="navbar-brand"><i class="fa fa-empire fa-lg logo"></i> Richy-Tech</span></a>
+		<ul>
+			<li><a href="index.html"><span class="list-menu"><i class="fa fa-home fa-2x fa-lg" style="margin-top: -10px;"></i></span></a></li>
+			<li><a href="#about" id="slink"><span class="list-menu"><i class="fa fa-user fa-lg"></i> About</span></a></li>
+			<li><a href="#study" id="slink"><span class="list-menu"><i class="fa fa-graduation-cap fa-lg"></i> Study</span></a></li>
+			<li><a href="#hobby" id="slink"><span class="list-menu"><i class="fa fa-gamepad fa-lg"></i> Hobby</span></a></li>
+			<li><a href="#contact" id="slink"><span class="list-menu"><i class="fa fa-phone fa-lg"></i> Contact</span></a></li>
+		</ul>
+	</nav>
+	<div class="box-bg">
+		<div class="img-bg">
+			<img src="image/bg (1).jpg" alt="">
+		</div>
+	</div>
+	<div class="text-bg">
+		<h1>My Portofolio Site</h1>
+	</div>
+	<div class="wrapper">
+		<div class="location" id="about"></div>
+		<div class="row">
+			<div class="col col-10 center">
+				<div class="container">
+					<h1 class="title-content"><span><i>About Me</i></span></h1>
+					<div class="row">
+						<div class="col col-8">
+							<p>
+								Saya Richy Rotuahta Saragih berumur hampir 19 tahun. Saya lahir di Sidomulyo pada tanggal 15 Oktober 1999. Sejak berumur 3 tahun saya sudah bertatap muka dengan komputer yang mengakibatkan mata saya menjadi rabun. Sejak SD saya mulai belajar menggunakan komputer seperti bermain game, belajar dasar desain, memperbaiki komputer, sampai membangun sebuah jaringan warnet pada saat SMP kelas 1. Mulai dari SMP saya sudah mencoba merakit komputer dan memperbaiki komputer yang ada di warnet saya. 
+							</p>
+							<p>
+								Perkenalan saya pertama kali dengan bahasa pemrograman adalah saat SMP kelas 2, saat itu saya sedang melihat-lihat beberapa contoh program yang sederhana. Hal itu membuat saya ingin menguji logika saya terus menerus. Karena keinginan menguji dan meningkatkan logika, saya memilih SMK jurusan RPL.
+							</p>
+							<p>
+								Pada saat SMK, saya diuji tentang materi dasar HTML dan itu lah yang membuat saya menjadi tertarik juga di bidang Web Programming dan Web Design.
+							</p>
+						</div>
+						<div class="col col-4" align="center">
+							<div class="box-profil">
+								<img src="image/profil.jpg" alt="">
+							</div>
+							<div class="note-profil">
+								<h4>Richy R. Saragih</h4>
+								<h5>Full Stack Web Development</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="location" id="study"></div>
+		<img src="image/bg-top.png" alt="" class="img-bg-full top-bg">
+		<div class="row bg-full">
+			<div class="col col-10 center">
+				<div class="container">
+					<h1 class="title-content"><span>My Study</span></h1>
+					<div class="row">
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/SD.png" alt=""></div>
+								<div class="title-card">Sekolah Dasar</div>
+								<div class="note-card">
+									<p>Saya sekolah dasar di SD Deli Murni Delitua dari tahun 2005 sampai 2011</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/SMP.png" alt=""></div>
+								<div class="title-card">SMP</div>
+								<div class="note-card">
+									<p>Saya sekolah SMP di SMP Negeri 1 Delitua dari tahun 2011 sampai 2014</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/SMK.png" alt=""></div>
+								<div class="title-card">SMK</div>
+								<div class="note-card">
+									<p>Saya sekolah SMK di SMK Negeri 1 Patumbak dari tahun 2014 sampai 2017</p>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img src="image/bg-bottom.png" alt="" class="img-bg-full">
+		<div class="location" id="hobby"></div>
+		<div class="row">
+			<div class="col col-10 center">
+				<div class="container" >
+					<h1 class="title-content"><span>My Hobby</span></h1>
+					<div class="row">
+						<div class="col col-4" align="center">
+							<div class="card">
+								<div class="img-card"><img src="image/ws-hobby.png" alt=""></div>
+								<div class="title-card mb-min">Web Designer</div>
+								<div class="note-card">
+									<p>Web desain merupakan hobi utama saya, saya sudah membuat beberapa aplikasi yang berbasis web. Aplikasi tersebut masih sangat sederhana karena skil saya masih sedikit.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/gaming-hobby.png" alt=""></div>
+								<div class="title-card mb-min">Gamers</div>
+								<div class="note-card">
+									<p>Game adalah hiburan utama saya. Bermain game merupakan sebuah hobi yang mengurangi kelelahan dan merelaksasikan pikiran. Salah satu game yang saya mainkan adalah Atlantica Online dan Clash Of Clans.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/travel-hobby.jpg" alt=""></div>
+								<div class="title-card mb-min">Traveling</div>
+								<div class="note-card">
+									<p>Traveling merupakan hobi yang menyenangkan karena memberikan pengalaman dan kepuasan terhadap batin. Kepuasan yang dimaksud adalah kepuasan akan melihat pemandangan indah secara langsung serta mencari pengalaman seperti camping di alam terbuka.</p>
+								</div>
+							</div>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/film-hobby.png" alt=""></div>
+								<div class="title-card mb-min">Watch Movie</div>
+								<div class="note-card">
+									<p>Menonton film bisa dikatakan hobi yang menambah pengetahuan maupun bahasa, terutama jika menonton film berbahasa inggris atau jepang seperti anime. Beberapa anime yang saya sukai adalah Black Clover dan Boruto.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/swimming-hobby.png" alt=""></div>
+								<div class="title-card mb-min">Swimming</div>
+								<div class="note-card">
+									<p>Hobi saya dalam bidang olahraga adalah berenang. Berenang merupakan hobi yang menyenangkan karena bisa bermain air secara puas.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-4">
+							<div class="card">
+								<div class="img-card"><img src="image/searching-hobby.png" alt=""></div>
+								<div class="title-card mb-min">Searching In Google</div>
+								<div class="note-card">
+									<p>Untuk menambah pengetahuan, saya sering melakukan pencarian di Google. Terkadang saya juga mencari ilmu dengan menggunakan Tor Browser untuk mencari sesuatu di HiddenWiki.
+
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="location" id="contact"></div>
+		<div class="row">
+			<div class="col col-10 center">
+				<div class="container">
+					<h1 class="title-content"><span>Contact Me</span></h1>
+					<div class="row">
+						<div class="col col-8" >
+							<div class="container">
+								<form action="" method="post">
+									<div class="form-group form-inline" align="center">
+										<div class="col col-5">
+											<input type="text" placeholder="Nama" name="txt-name" id="txt-name" class="txt-input">
+										</div>
+										<div class="col col-5">
+											<input type="text" placeholder="Email" name="txt-email" id="txt-email" class="txt-input">
+										</div>
+									</div>
+									<div class="form-group" align="center">
+										<div class="col col-10">
+											<textarea name="txt-content-email" id="txt-content-email" class="txtarea-input">Isi Pesan</textarea>
+										</div>
+									</div>
+									<div class="form-group" align="center">
+										<div class="col col-10">
+											<button class="btn-contact" onclick="mailme()"><i class="fa fa-send"></i> Kirim</button>
+										</div>
+									</div>
+								</form>
+								<script type="text/javascript">
+									function mailme() {
+										var nama = document.getElementById('txt-name').value;
+										var email = document.getElementById('txt-email').value;
+										var isi_pesan = document.getElementById('txt-content-email').value;
+										setTimeout("location.href='mailto:richy.rotuahta15@gmail.com?subject=Hay%20Richy&body=["+email+"]%0D%0A"+nama+". %0D%0A%0D%0A"+isi_pesan+"'", 0);
+									}
+								</script>
+							</div>
+						</div>
+						<div class="col col-4 contact-box">
+							<div class="col col-12 margin-min">
+								<div class="col col-2 box-contact margin-min">
+									<i class="fa fa-envelope fa-lg"></i> 
+								</div>
+								<div class="col col-10 box-contact-text margin-min" align="left">
+									richy.rotuahta15@gmail.com
+								</div>
+							</div>
+							<div class="col col-12 margin-min">
+								<div class="col col-2 box-contact margin-min">
+									<i class="fa fa-phone fa-lg"></i> 
+								</div>
+								<div class="col col-10 box-contact-text margin-min" align="left">
+									+62 857-6369 7778
+								</div>
+							</div>
+							<div class="col col-12 margin-min">
+								<div class="col col-2 box-contact margin-min">
+									<i class="fa fa-whatsapp fa-lg"></i> 
+								</div>
+								<div class="col col-10 box-contact-text margin-min" align="left">
+									+62 857-6369 7778
+								</div>
+							</div>
+							<div class="col col-12 margin-min">
+								<div class="col col-2 box-contact margin-min">
+									<i class="fa fa-map-marker fa-lg"></i> 
+								</div>
+								<div class="col col-10 box-contact-text margin-min" align="left">
+									Jl. Besar Delitua No. 62 Sidomulyo A
+								</div>
+							</div>
+							<h4>Sosial Media and Website</h4>
+							<div class="list-icon">
+								<a href="https://facebook.com/ukrenzz" target="_blank"><div class="icon-box icon-fb"><i class="fa fa-facebook fa-2x"></i></div></a>
+								<a href="https://twitter.com/ukrenzz" target="_blank"><div class="icon-box icon-twitter"><i class="fa fa-twitter fa-2x"></i></div></a>
+								<a href="https://id.linkedin.com/in/richy-r-b18625105" target="_blank"><div class="icon-box icon-linkedin"><i class="fa fa-linkedin fa-2x"></i></div></a>
+								<a href="https://www.instagram.com/ukrenzz/" target="_blank"><div class="icon-box icon-instagram"><i class="fa fa-instagram fa-2x"></i></div></a>
+								<a href="https://www.youtube.com/channel/UC67FII02Wxcz0S0F_9YkqtQ" target="_blank"><div class="icon-box icon-youtube"><i class="fa fa-youtube fa-2x"></i></div></a>
+								<a href="https://ayosiap.blogspot.co.id/" target="_blank"><div class="icon-box icon-site"><i class="fa fa-globe fa-2x"></i></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="music-box" id="music_box">
+		<div class="row">
+			<div class="col col-12">
+				<div class="container">
+					<audio controls id="myMusic">
+						<source src="audio/music.mp3">
+					</audio>
+				</div>
+			</div>
+		</div>
+	</div>
+	<span class="btn_music" id="btn_music"><i class="fa fa-music fa-lg"></i></span>
+	<a href="#" class="btn_back" id="btn_back"><span><i class="fa fa-chevron-up"></i></span></a>
+	<img src="image/bg-top.png" alt="" class="img-bg-full">
+	<footer>
+		<div class="list-icon" align="center">
+			<div class="box">
+				<a href="https://facebook.com/ukrenzz" target="_blank"><div class="icon-box icon-fb"><i class="fa fa-facebook fa-2x"></i></div></a>
+				<a href="https://twitter.com/ukrenzz" target="_blank"><div class="icon-box icon-twitter"><i class="fa fa-twitter fa-2x"></i></div></a>
+				<a href="https://id.linkedin.com/in/richy-r-b18625105" target="_blank"><div class="icon-box icon-linkedin"><i class="fa fa-linkedin fa-2x"></i></div></a>
+				<a href="https://www.instagram.com/ukrenzz/" target="_blank"><div class="icon-box icon-instagram"><i class="fa fa-instagram fa-2x"></i></div></a>
+				<a href="https://www.youtube.com/channel/UC67FII02Wxcz0S0F_9YkqtQ" target="_blank"><div class="icon-box icon-youtube"><i class="fa fa-youtube fa-2x"></i></div></a>
+				<a href="https://ayosiap.blogspot.co.id/" target="_blank"><div class="icon-box icon-site"><i class="fa fa-globe fa-2x"></i></div></a>
+			</div>
+		</div>
+		2018 &copy; Richy Rotuahta Saragih. All Right Reserved
+	</footer>
+</body>
+</html>
